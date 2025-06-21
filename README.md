@@ -156,13 +156,13 @@ KONSPEKTIKI
 
 ## Объекты и массивы
 
-## Создание объектов
+### Создание объектов
 
 + Литерал
 
 + Конструктор
 
-## Методы массивов
+### Методы массивов
 
 + push
 
@@ -184,7 +184,7 @@ KONSPEKTIKI
 
 + sort
 
-## Классы
+### Классы
 
 + Синтаксис классов
 
@@ -194,7 +194,7 @@ KONSPEKTIKI
 
 + Приватные свойства
 
-## Модули
+### Модули
 
 + Экспорт и импорт: export, import.
 
@@ -202,128 +202,128 @@ KONSPEKTIKI
 
 # Лекция 3 Углубленный JavaScript
 
-Асинхронность
+## Асинхронность
 
-Event Loop: макротаски, микротаски.
++ Event Loop: макротаски, микротаски.
 
-Промисы: then, catch, finally, Promise.all, Promise.race.
++ Промисы: then, catch, finally, Promise.all, Promise.race.
 
-Async/await.
++ Async/await.
 
-Обработка ошибок
+## Обработка ошибок
 
-try-catch-finally.
++ try-catch-finally.
 
-Пользовательские ошибки.
++ Пользовательские ошибки.
 
-Регулярные выражения
+## Регулярные выражения
 
-Синтаксис: new RegExp, /шаблон/флаги.
++ Синтаксис: new RegExp, /шаблон/флаги.
 
-Методы: test, exec, match, replace.
++ Методы: test, exec, match, replace.
 
-События
+## События
 
-Типы событий
+### Типы событий
 
-Мыши
++ Мыши
 
-Клавиатуры
++ Клавиатуры
 
-Формы
++ Формы
 
-Обработчики
+## Обработчики
 
-addEventListener
++ addEventListener
 
-removeEventListener
++ removeEventListener
 
-Всплытие и погружение
+## Всплытие и погружение
 
-Лекция 4 Архитектура Web
+# Лекция 4 Архитектура Web
 
-Критические этапы рендеринга
+## Критические этапы рендеринга
 
-Загрузка HTML.
++ Загрузка HTML.
 
-Построение DOM.
++ Построение DOM.
 
-Построение CSSOM.
++ Построение CSSOM.
 
-Формирование Render Tree.
++ Формирование Render Tree.
 
-Компоновка (layout).
++ Компоновка (layout).
 
-Отрисовка (paint).
++ Отрисовка (paint).
 
-Архитектурные решения
+## Архитектурные решения
 
-MVC: Модель, Представление, Контроллер.
++ MVC: Модель, Представление, Контроллер.
 
-Роутинг: History API.
++ Роутинг: History API.
 
-CSS-архитектура: BEM, CSS Modules, JSS.
++ CSS-архитектура: BEM, CSS Modules, JSS.
 
-Лекция 5 Node.js
+# Лекция 5 Node.js
 
-Основы Node.js
+## Основы Node.js
 
-Среда выполнения JavaScript на сервере.
++ Среда выполнения JavaScript на сервере.
 
-Модули: http, fs, path, os.
++ Модули: http, fs, path, os.
 
-Создание сервера.
++ Создание сервера.
 
-Nest.js
+## Nest.js
 
-Фреймворк для серверных приложений.
++ Фреймворк для серверных приложений.
 
-Контроллеры, сервисы, Dependency Injection.
++ Контроллеры, сервисы, Dependency Injection.
 
-TypeScript
+## TypeScript
 
-Статическая типизация.
++ Статическая типизация.
 
-Интерфейсы, декораторы.
++ Интерфейсы, декораторы.
 
-Лекция 6 AJAX
+# Лекция 6 AJAX
 
-XMLHttpRequest
+## XMLHttpRequest
 
-Синхронные и асинхронные запросы.
++ Синхронные и асинхронные запросы.
 
-Обработка ответов.
++ Обработка ответов.
 
-CORS
+## CORS
 
-Правило ограничения домена.
++ Правило ограничения домена.
 
-Заголовки: Origin, Access-Control-Allow-Origin.
++ Заголовки: Origin, Access-Control-Allow-Origin.
 
-Хранение данных
+## Хранение данных
 
-Куки
++ Куки
 
-Web Storage
++ Web Storage
 
-IndexedDB
++ IndexedDB
 
-Лекция 7 Асинхронный JavaScript
+# Лекция 7 Асинхронный JavaScript
 
-Promise
+## Promise
 
-Состояния: pending, fulfilled, rejected.
++ Состояния: pending, fulfilled, rejected.
 
-Цепочки вызовов: then, catch.
++ Цепочки вызовов: then, catch.
 
-Fetch API
+## Fetch API
 
-Упрощенный интерфейс для HTTP-запросов.
++ Упрощенный интерфейс для HTTP-запросов.
 
-Опции: method, headers, body.
++ Опции: method, headers, body.
 
-Транспайлинг и сборка
+## Транспайлинг и сборка
 
-Babel: преобразование современного JS в старый.
++ Babel: преобразование современного JS в старый.
 
-Bundler (Vite): объединение файлов в bundle.
++ Bundler (Vite): объединение файлов в bundle.
