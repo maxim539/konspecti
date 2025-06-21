@@ -2,17 +2,17 @@ KONSPEKTIKI
 
 # Лекция 1 Введение в Web
 
-1. Основные темы курса
+* Основные темы курса
 
-2. Фундаментальный web
+* Фундаментальный web
 
-3. Advanced JavaScript
+* Advanced JavaScript
 
-4. Клиентская разработка (vanilla js)
+* Клиентская разработка (vanilla js)
 
-5. Серверная разработка (node.js)
+* Серверная разработка (node.js)
 
-6. Real-time сообщения (polling, websocket)
+* Real-time сообщения (polling, websocket)
 
 # Базовый сценарий работы web-приложения
 
