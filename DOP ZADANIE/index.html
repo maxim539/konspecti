@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гаити</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 700px;
+            margin: 2rem auto;
+            background: #f3f4f6;
+            color: #1e293b;
+            padding: 1rem 2rem;
+        }
+        h1 {
+            color: #2563ed;
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin: 1rem;
+            font-weight: 600;
+        }
+        input {
+            width: 100%;
+            padding: 8px,12px;
+            margin-top: 0.25rem;
+            border: 1.5px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            padding: 12px 20px;
+            background-color: #15f1f4;
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition:backgraung-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        .output{
+            margin-top: 2rem;
+            background-color: white;
+            padding: 20px;
+            border-radius: 16px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Управление путешествием — Задача на объект в JavaScript</h1>
+    <form id="tripForm" >
+        <label for="name">Название поездки</label>
+        <input type="text" id="name" required placeholder="напр. Путешествие по Италии">
+
+        <label for="startData">Дата начала</label>
+        <input type="date" id="startData" required>
+
+        <label for="endData">Дата окончания</label>
+        <input type="date" id="endData" required>
+
+        <label for="budget">Бюджет (в рублях)</label>
+        <input type="number" id="budget" required min="0" step="100" placeholder="например 50000">
+
+        <button id="btn1" type="button" style="background-color:#2563ed;color:white;">Создать и показать поездку</button>
+    </form>
+
+    <h2 style="margin-top:2.5rem;">Добавить город назначения</h2>
+    <div style="display:flex;gap:10px;align-items:center;margin-bottom:1.5rem;">
+        <input type="text" id="cityInput" placeholder="Введите название города" style="flex:1;">
+        <button id="addCityBtn" type="button" style="background-color:#2563ed;color:white;">Добавить в поездку</button>
+    </div>
+
+    <h2>Обновить бюджет поездки</h2>
+    <div style="display:flex;gap:10px;align-items:center;">
+        <input type="number" id="budgetUpdateInput" placeholder="Введите сумму для изменения бюджета (+ или -)" style="flex:1;">
+        <button id="updateBudgetBtn" type="button" style="background-color:#2563ed;color:white;">Обновить бюджет</button>
+    </div>
+
+    <div id="output" class="output" aria-live="polite"></div>
+    
+    <script>
+        let trip = null;
+
+        const outputE1 = document.getElementById("output");// инцализирую обьекты из html
+        const tripForm = document.getElementById("tripForm");
+        const btn1 = document.getElementById("btn1");
+        const addCityBtn = document.getElementById("addCityBtn");
+        const cityInput = document.getElementById("cityInput");
+        const updateBudgetBtn = document.getElementById("updateBudgetBtn");
+        const budgetUpdateInput = document.getElementById("budgetUpdateInput");
+
+        function getTripSummary(tripObj) {
+            let cities = tripObj.destinations && tripObj.destinations.length > 0 ? `\nГорода: ${tripObj.destinations.join(", ")}` : "";
+            return `Поездка: ${tripObj.name}\nДаты: ${tripObj.startData} — ${tripObj.endData}\nБюджет: ${tripObj.budget.toLocaleString('ru-RU')} руб${cities}`;
+        }
+
+        btn1.addEventListener('click',() => {
+            const name = document.getElementById("name").value.trim();
+            const startData = document.getElementById("startData").value;
+            const endData = document.getElementById("endData").value;
+            const budgetvalue = parseFloat( document.getElementById("budget").value);
+
+            if (!name || !startData || !endData || isNaN(budgetvalue) || budgetvalue < 0){
+                outputE1.textContent = "Пожалуйста, заполните все поля корректно.";
+                return;
+            }
+            // обьект 
+            trip = {
+                name, // название поездки
+                startData,
+                endData,
+                destinations: [],
+                budget: budgetvalue
+            };
+            outputE1.textContent = getTripSummary(trip);
+        });
+
+        addCityBtn.addEventListener('click', () => {
+            if (!trip) {
+                outputE1.textContent = "Сначала создайте поездку.";
+                return;
+            }
+            const city = cityInput.value.trim();
+            if (!city) {
+                outputE1.textContent = "Введите название города.";
+                return;
+            }
+            trip.destinations.push(city);
+            cityInput.value = "";
+            outputE1.textContent = getTripSummary(trip);
+        });
+
+        updateBudgetBtn.addEventListener('click', () => {
+            if (!trip) {
+                outputE1.textContent = "Сначала создайте поездку.";
+                return;
+            }
+            const delta = parseFloat(budgetUpdateInput.value);
+            if (isNaN(delta)) {
+                outputE1.textContent = "Введите корректную сумму для изменения бюджета.";
+                return;
+            }
+            trip.budget += delta;
+            budgetUpdateInput.value = "";
+            outputE1.textContent = getTripSummary(trip);
+        });
+    </script>
+</body>
+</html>
