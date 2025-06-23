@@ -3,10 +3,6 @@ KONSPEKTIKI
 ![i (2)](https://github.com/user-attachments/assets/b8aadf1c-d80b-4601-a06a-969c90b5ee7f)
 ![i (3)](https://github.com/user-attachments/assets/e3bcdfa5-87ed-4dbb-af6f-a7deecc0c9f5)
 ![d2b7ecd5c61a5891c686f5ddebb786168d7b1a4cr1-300-200_hq](https://github.com/user-attachments/assets/621f1fb0-eaee-4c5d-94cd-787fc2303a5b)
-![my-little-pony-фэндомы-mlp-видео-1118727](https://github.com/user-attachments/assets/c6e3a962-c2f8-407a-81b2-bcb3e87efdb6)
-
-
-
 
 # Лекция 1 Введение в Web
 
