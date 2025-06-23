@@ -1,8 +1,11 @@
 KONSPEKTIKI
 
 ![i (2)](https://github.com/user-attachments/assets/b8aadf1c-d80b-4601-a06a-969c90b5ee7f)
-![i (3)](https://github.com/user-attachments/assets/e3bcdfa5-87ed-4dbb-af6f-a7deecc0c9f5)
 ![d2b7ecd5c61a5891c686f5ddebb786168d7b1a4cr1-300-200_hq](https://github.com/user-attachments/assets/621f1fb0-eaee-4c5d-94cd-787fc2303a5b)
+![i (3)](https://github.com/user-attachments/assets/e3bcdfa5-87ed-4dbb-af6f-a7deecc0c9f5)
+![u_bf7a1aac4a068aa1eb22d3556025a507_800](https://github.com/user-attachments/assets/a345c4d7-8e39-4482-b0ba-e6d129e731f2)
+![image](https://github.com/user-attachments/assets/7db97233-2d59-4ead-8cf9-dbc06f250afd)
+
 
 # Лекция 1 Введение в Web
 
