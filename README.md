@@ -1,5 +1,7 @@
 KONSPEKTIKI
-![Uploading ce937435de42022d5b57b5d546fba846.jpg…]()
+
+![ce937435de42022d5b57b5d546fba846](https://github.com/user-attachments/assets/633ce757-0f50-4f54-826a-d45cd4329313)
+
 
 # Лекция 1 Введение в Web
 
