@@ -1,6 +1,6 @@
 KONSPEKTIKI
 
-![136208894_original](https://github.com/user-attachments/assets/3589416b-98f3-43e6-86ea-5feebe59c7bd)
+![136208894_original](https://github.com/user-attachments/assets/59ba8f8a-683d-4026-bc2f-ee6ae030943d)
 
 
 
