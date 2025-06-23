@@ -4,6 +4,7 @@ KONSPEKTIKI
 ![i (3)](https://github.com/user-attachments/assets/e3bcdfa5-87ed-4dbb-af6f-a7deecc0c9f5)
 ![d2b7ecd5c61a5891c686f5ddebb786168d7b1a4cr1-300-200_hq](https://github.com/user-attachments/assets/621f1fb0-eaee-4c5d-94cd-787fc2303a5b)
 ![5549e6ad0501fa58f4a12599d62dd360](https://github.com/user-attachments/assets/4dd42080-3693-4fa1-9626-36633ffd4d11)
+![my-little-pony-фэндомы-mlp-видео-1118727](https://github.com/user-attachments/assets/f4abae2e-ae2f-40c1-a833-b516c0c6ab23)
 
 
 
