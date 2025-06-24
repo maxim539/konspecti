@@ -85,7 +85,7 @@ KONSPEKTIKI
 
 + span - предназначен для определения строчных элементов документа(туда пишешь сплошной текст).
   
-+ пример:
+Пример:
 
 ![image](https://github.com/user-attachments/assets/7e14098d-7fb6-481a-8a56-156f46fb85a4)
 
